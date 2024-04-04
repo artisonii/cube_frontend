@@ -1,7 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Data } from '../data';
 import CustomerCard from '../components/customerCard/CustomerCard';
-// import CustomerDetails from '../components/customerDetails/CustomerDetails';
 import CustomerDetails from "../components/customerDetails/CustomerDeatils"
 
 import styles from './Home.module.css';

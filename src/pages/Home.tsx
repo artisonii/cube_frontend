@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Data } from '../data'
 import CustomerCard from '../components/customerCard/CustomerCard'
 import CustomerDeatils from '../components/customerDetails/CustomerDeatils'

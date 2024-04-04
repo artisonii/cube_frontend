@@ -1,0 +1,26 @@
+#container > h1 {
+  text-align: center;
+}
+
+.detailsSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* gap: 20px; */
+  height: 100vh;
+}
+
+.detailsSection > div:first-child {
+  overflow: auto;
+}
+.detailsSection > div:nth-child(2) {
+  background-color: rgb(249, 243, 243);
+  padding: 25px 100px;
+}
+.detailsSection > div:first-child::-webkit-scrollbar {
+  width: 3px;
+}
+
+.detailsSection > div:first-child::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}

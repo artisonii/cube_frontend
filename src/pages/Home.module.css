@@ -1,5 +1,6 @@
 #container > h1 {
   text-align: center;
+  font-weight: 500;
 }
 
 .detailsSection {
@@ -17,7 +18,7 @@
   padding: 25px 100px;
 }
 .detailsSection > div:first-child::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 
 .detailsSection > div:first-child::-webkit-scrollbar-thumb {

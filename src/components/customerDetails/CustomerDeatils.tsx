@@ -9,7 +9,7 @@ const CustomerDetails: React.FC<customerData> = ({
   imageUrl,
 }) => {
   const [images, setImages] = useState<string[]>([]);
-
+  const [loading,setLoading] = useState<boolean>(true)
   const generateImages = async () => {
     let arr: string[] = [];
     for (let i = 0; i < 9; i++) {
@@ -17,6 +17,7 @@ const CustomerDetails: React.FC<customerData> = ({
       arr.push(blobUrl);
     }
     setImages(arr);
+    setLoading(false)
   };
 
   const getImage = async () => {
@@ -39,15 +40,18 @@ const CustomerDetails: React.FC<customerData> = ({
 
   return (
     <div id={styles.cardDetails}>
-      <h1>{name}</h1>
+      <h1>{name} details here</h1>
       <p>{details}</p>
       <div className={styles.cardImage}>
-        {images.map((blobUrl, index) => (
+        {!loading&& images.map((blobUrl, index) => (
           <div key={index} className={styles.imageContainer}>
             <img src={blobUrl} alt={`Image ${index}`} />
           </div>
         ))}
       </div>
+      {
+        loading&&<h2 className={styles.loading}>Loading Images...</h2>
+      }
     </div>
   );
 };

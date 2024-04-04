@@ -7,7 +7,6 @@ interface CustomerCardProp{
     className:string
 }
 const CustomerCard :React.FC<CustomerCardProp> = ({name,details, className}) => {
-    console.log(className)
   return (
     <div className={styles[className]}>
      <h1 className={styles.heading}>{name}</h1>

@@ -2,14 +2,16 @@
   background-color: rgb(219, 215, 215);
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  cursor: pointer;
 }
 
 .cardWhite {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  cursor: pointer;
 }
-
 .heading {
   padding: 0px;
   margin: 0px;
+  font-weight: 500;
 }

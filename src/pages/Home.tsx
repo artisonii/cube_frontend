@@ -15,7 +15,12 @@ const Home = () => {
         detailsSectionRef.current &&
         (detailsSectionRef.current.scrollTop + detailsSectionRef.current.clientHeight >= detailsSectionRef.current.scrollHeight-10)
       ) {
-        setCustomers([...customers, ...Data]);
+
+        let arr = [] 
+        for(let i = customers.length+1; i<=customers.length+10;i++){
+          arr.push({name:"Customer "+i,details:customers[0].details,imageUrl:customers[0].imageUrl})
+        }
+        setCustomers([...customers, ...arr]);
       }
     };
 
